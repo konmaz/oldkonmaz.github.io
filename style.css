@@ -51,7 +51,7 @@ a {
 /* section 2 */
 .section-2 {
     padding-top: 20vh;
-    width: 70%;
+    width: 100%;
 }
 
 .section-2 h2 {
@@ -102,21 +102,22 @@ a {
 
 
 /* Dropdown  */
-.dropdown
-{
+.dropdown {
     position: relative;
-    
+
 
 }
+
 .dropdown-btn {
     display: inline-block;
 }
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     z-index: 1;
     position: absolute;
-    right: 0px;
+    left:30% ;
     top: -150%;
 
 }
@@ -125,9 +126,27 @@ a {
 /* Show the dropdown menu on hover */
 .dropdown-btn:hover+.dropdown-content {
     display: block;
-    
+
 }
 
-iframe{
-    width: 250%;
+iframe {
+    
+    width: 150%;
+}
+
+@media all and (max-width: 1550px) {
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        z-index: 1;
+        position: relative;
+        left: 5%;
+        width: 85%;
+    }
+    
+    iframe{
+        width: 85%;
+    }
+
 }
